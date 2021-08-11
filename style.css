@@ -7,13 +7,18 @@ html {
   }
 body {
     /* background-color: #637070; */
-    background-color: #829191;
+    /* background-color: #829191; */
+    background-color: #808000;
     /* padding-top: 3%; */
     /* white-space:nowrap; */
     /* overflow-y: scroll;
     overflow-x: hidden;  */
     
     
+}
+button{
+    margin: auto;
+    background: white;
 }
 .header{
     /* background-color: #2C423F; */
@@ -62,7 +67,11 @@ td{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+}
+a:hover{
+    color: purple ;
+    transform: scale(1.1);
 }
 .tabs{
     
@@ -74,7 +83,7 @@ a{
     height: 1000px;
     width: 100%;
     /* margin: 80px 0px 80px 0px; */
-    background: #949B96;
+    background: #F5F5DC;
     /* position: fixed; this is done in order to stay in the back */
 }
 #aboutme{
@@ -88,29 +97,33 @@ a{
     background: white;
     padding: 20px;
     
-    height: 800px;
+    height: 500px;
     width: 800px;
     position: relative;
 
 }
 #experience{
-    width: 100%;
+    width: 80%;
     height: 800px;
     /* background: white; */
+    margin: auto;
 }
 .resume{
     margin: 0px 150px 0px 150px;
-    background: #fafad2;
+    background: white;
     height: 90%;
 }
 #projects{
     width: 100%;
     height: 1000px;
-    background: #C5C5C5;
+    background: #F5F5DC;
+    /* the following will fix the problem when overflowing happens inside the div */
+    /* super cool */
+    /* overflow: auto;  */
 }
 #proj{
-    height: 400px;
-    width: 400px;
+    height: 800px;
+    width: 800px;
     border: 1px solid black;
     margin: 20px 40px 20px 40px;
 }
@@ -120,19 +133,23 @@ a{
     flex-wrap: wrap-reverse;
     margin: 50px 50px 50px 50px;
     padding: 5px 50px 50px 50px;
+    float: left;
 }
 #footer{
     width: 100%;
-    height: 300px;
+    height: 350px;
     background: #5F7470;
 }
 .contacts{
     display: flex;
     padding: 0px 20px 0px 20px;
+    /* margin: auto; */
+    /* margin-left: 20px; */
+    float: left;
 }
-li{
+/* li{
     padding: 0px 20px 0px 20px;
-}
+} */
 
 .backtotop {
     /* position: sticky; */
@@ -141,3 +158,42 @@ li{
     font-size: 18px;
     position: sticky;
   }
+  h6{
+      margin: auto;
+  }
+  .icons{
+      height: 70px;
+      width: 70px;
+      margin-left: 25px;
+  }
+  form{
+      float: right;
+      width: 80%;
+      height: 100%;
+  }
+.line-split{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+}
+.courses{
+    display: flex;
+}
+
+/* for projects */
+#images{
+    height: 400px;
+    width: 90%;
+    border: 1px solid black;
+}
+.projs{
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    margin: 30px 30px 30px 30px;
+}
+.proj-selection{
+    float: right;
+    margin: 100px 150px 100px 100px;
+}

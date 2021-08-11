@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Xochitl Medina Arreola</title>
+        <!-- I should add an image of myself right here, or maybe in the about me instead? -->
         <link rel="stylesheet" href="style.css">
         <script src="main.js"></script>
         
@@ -21,11 +22,12 @@
  <div class="header"> 
     <!-- Creating my name through animation -->
     <h1 id="name">Xochitl Medina Arreola</h1>
-    <h4 id="name" style="font-size: 28px;">Software Developer</h4>
+    <h4 id="name" style="font-size: 28px;">B.S. Computer Science | San Jose State University</h4>
+    <!-- <button>Pop</button> -->
     
-    <table>
+    <table style="position: sticky;">
         <tr>
-            <td>About Me</td>
+            <td><a>About Me</a></td>
             <td><a href="#experience">Education</a></td>
             <td><a href="#projects">Projects</a></td>
             <td><a href="#footer">Contact Me</a></td>
@@ -37,53 +39,123 @@
 <hr>
     <div class="first">
         <div id="aboutme">
-          <center><h1>About me</h1></center>  
+          <center><h1>About me</h1></center>
+            <img src="me.jpg" alt="professional pic of person" style="width: 350px; height: 350px; border-radius: 5%; float: left; margin-right: 25px;">
+            <p>Hello!</p>
+            <p style="text-indent: 30px; font-size: 20px;">My name is Xochitl, proncounced as 'sochi'. I am currently a senior at San Jose State University and will be graduating in Summer 2021.
+                Not only am I interesting in tech, but as well as art, meaining drawing and painting. My interest in tech are Web Development and Security. I love to 
+                learn to new things and am always up for something new.</p>
         </div>
     </div> 
 
     <div id="experience">
         <div class="resume">
             <h1 style="padding: 40px 0px 0px 40px;">Resume</h1>
+            <center><button><a href="resume.pdf" target="_blank" style="color: black;">PDF Version</a></button></center>
             <br>
-            <h2 style="padding-left: 125px;">Education:</h2>
-            <p style="padding-left: 240px;">San Jose State University<br>
-                                            San Jose, CA, US<br>
-                                            GPA: 3.488</p>
+            <h2 style="padding-left: 70px;">Education:</h2>
+            <div class="line-split"></div>
+            <p style="padding-left: 70px; float: left;">BS - Computer Science</p>
+            <p style="float: right; padding-right: 70px;">Expected Summer 2021</p>
+            <br>
+            <br>
+            <p style="padding-left: 70px;">San Jose State University<br>
+                                            GPA: 3.39</p>
+
+            
+            <p style="padding-left: 70px; font-size: larger;"><b>Courses</b></p>
+            <div class="courses">
+                        <ul style="font-size: 16px; padding-left: 85px;">
+                            <li>Java</li>
+                            <li>C Programming</li>
+                            <li>Object Oriented Design</li>
+                            <li>Data Structures and Algorithm</li>
+                        </ul>
+
+                        <ul style="font-size: 16px; padding-left: 100px;">
+                            <li>Information Security</li>
+                            <li>Operation Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Network Management</li>
+                        </ul>
+
+                        <ul style="font-size: 16px; padding-left: 100px;">
+                            <li>Computer Architecture</li>
+                            <li>Software Engineering</li>
+                        </ul>
+            </div>
+            
+            <div class="line-split" style="height: 5px; margin-top: 30px; margin-bottom: 30px;"></div>
+
+            <h2 style="padding-left: 70px;">Additional Experience:</h2>
+            <div class="line-split"></div>
+            <p style="padding-left: 70px;">Immigration Center at Sacred Heart Community Service, San Jose, CA, Fall 2017</p>
+            <p style="padding-left: 70px;">Volunteer:</p>
+            <p style="padding-left: 70px;">
+                <ul style="padding-left: 150px;">
+                    <li>Helped inform San Jose residents of the immigration services available to them. </li>
+                    <li>Collaborated with other volunteers and workers to create and improve new events that will benefit the immigrant community.</li>
+                </ul>
+            </p>
+            <!-- <h2 style="padding-left: 125px;">Programming Languages:</h2>
+            <p style="padding-left: 240px;"><ul style="padding-left: 240;">
+                                            <li style="padding-left: 240;">Java</li>
+                                            <li style="padding-left: 240;">HTML</li>
+                                            <li style="padding-left: 240;">CSS</li>
+                                            <li style="padding-left: 240;">Python</li>
+                                            </ul></p> -->
         </div>
     </div>
 
     <div id="projects">
         <h1 style="padding: 20px 0px 0px 20px;">Projects</h1>
-        <div id="projbox">
-            <!-- the id is for the basic structure of each box -->
-            <div id="proj" class="proj1">
-                <h6>Project1</h6>
+        <center>
+            <div id="projbox">
+                <!-- the id is for the basic structure of each box -->
+                <div id="proj">
+                    <h2 id="title">Title</h6>
+                    <div id="links">links</div>
+                    <div id="images">images of said project</div>
+                    <div id="description">Description</div>
+                </div>
             </div>
-            <div id="proj" class="proj2">
-                <h6>Project2</h6>
+            <div class="proj-selection">
+                <div id="weeklyplanner" class="projs">
+
+                </div>
+                <div id="houses" class="projs">
+
+                </div>
             </div>
-            <div id="proj" class="proj3">
-                <h6>Project3</h6>
-            </div>
-            <div id="proj" class="proj4">
-                <h6>Project4</h6>
-            </div>
-            <div id="proj" class="proj5">
-                <h6>Project5</h6>
-            </div>
-            <div id="proj" class="proj6">
-                <h6>Project6</h6>
-            </div>
-        </div>
+        </center>
+        <script src="main.js"></script>
     </div>
     
     <div id="footer">
         <h1>Where I am at:</h1>
-        <ul class="contacts">
-            <li>GitHub</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-        </ul>
+        <div class="contacts">
+            <div><a href="https://github.com/xochitlmagm"><img src="github.png" alt="github logo" class="icons"></a></div>
+            <div><a href="https://www.linkedin.com/in/xochitl-medina-arreola/"><img src="linkedin.png" alt="linkedin logo" class="icons"></a></div>
+            <div><a href="https://twitter.com/xochitlmagm"><img src="twitter.png" alt="twitter logo" class="icons"></a></div>
+        </div>
+        <form action="sendemail.php" method="post" >
+            <p>
+                <label for="name">Enter name: </label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for="email">Enter email: </label>
+                <input type="text" name="email">
+            </p>
+            <p>
+                <label for="subject">Subject line: </label>
+                <input type="text" name="subject">
+            </p>
+            <p>
+                <input type="text" name="body" style="width: 400px; height: 100px;">
+            </p>
+            <input type="button" value="submit">
+        </form>
     </div>
 
     <button class="backtotop"><a href="#name">Back to top</a></button>
