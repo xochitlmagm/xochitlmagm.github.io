@@ -22,64 +22,105 @@
  <div class="header"> 
     <!-- Creating my name through animation -->
     <h1 id="name">Xochitl Medina Arreola</h1>
-    <h4 id="name" style="font-size: 28px;">B.S. Computer Science | San Jose State University</h4>
+    <h4 id="name" style="font-size: 26px;">B.S. Computer Science | San Jose State University</h4>
     <!-- <button>Pop</button> -->
     
-    <table style="position: sticky;">
+    <!-- <table style="position: sticky;" id="directory">
         <tr>
             <td><a>About Me</a></td>
             <td><a href="#experience">Education</a></td>
             <td><a href="#projects">Projects</a></td>
             <td><a href="#footer">Contact Me</a></td>
         </tr>
-    </table>
-    
+    </table> -->
+
+    <!-- <ul id="newdir">
+        <li><a>About Me</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#footer">Contact Me</a></li>
+    </ul> -->
+
+    <div class="dropdown">
+        <button onclick="goTo()" class="dropbtn">Go to: </button>
+        <div id="selection" class="dropdown-content">
+            <a>About Me</a>
+            <a href="#experience">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact Me</a>
+        </div>
+    </div>
+
+    <script>
+        function goTo() {
+            document.getElementById("selection").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+    </script>
 </div> 
 
 <hr>
     <div class="first">
         <div id="aboutme">
-          <center><h1>About me</h1></center>
+          <h1 style="margin: 0 10px 0 0;">About me</h1>
             <img src="me.jpg" alt="professional pic of person" style="width: 350px; height: 350px; border-radius: 5%; float: left; margin-right: 25px;">
-            <p>Hello!</p>
-            <p style="text-indent: 30px; font-size: 20px;">My name is Xochitl, proncounced as 'sochi'. I am currently a senior at San Jose State University and will be graduating in Summer 2021.
-                Not only am I interesting in tech, but as well as art, meaining drawing and painting. My interest in tech are Web Development and Security. I love to 
-                learn to new things and am always up for something new.</p>
+            
+            <div style="padding: 20px; margin: 20px; background-color: #a5a507; border-radius: 5%;">
+                <p style="text-indent: 30px; font-size: 20px; white-space: normal; overflow: scroll; text-overflow: ellipsis; width:350px;"><p>Hello!</p>My name is Xochitl, pronounced as 'sochi'. I graduated from San Jose State University this Summer 2021.
+                    Not only am I interested in tech, but as well as art (specifically drawing and painting). My interest in tech are Web Development and Security. I love to 
+                    learn to new things and I am always up for something new.
+                </p>
+            </div>    
         </div>
     </div> 
 
     <div id="experience">
         <div class="resume">
-            <h1 style="padding: 40px 0px 0px 40px;">Resume</h1>
-            <center><button><a href="resume.pdf" target="_blank" style="color: black;">PDF Version</a></button></center>
+            <div>
+                <h1 style="padding: 0px 0px 0px 10px; margin-top: 5px; float: left;">Resume</h1>
+                <button style="float: middle; margin: 10px 0px 0px 30px;"><a href="resume.pdf" target="_blank" style="color: black;">PDF Version</a></button>
+            </div>
             <br>
-            <h2 style="padding-left: 70px;">Education:</h2>
+            <h2 style="padding-left: 40px;">Education:</h2>
             <div class="line-split"></div>
-            <p style="padding-left: 70px; float: left;">BS - Computer Science</p>
+            <p style="padding-left: 40px; float: left;">BS - Computer Science</p>
             <p style="float: right; padding-right: 70px;">Expected Summer 2021</p>
             <br>
             <br>
-            <p style="padding-left: 70px;">San Jose State University<br>
+            <p style="padding-left: 40px;">San Jose State University<br>
                                             GPA: 3.39</p>
 
             
-            <p style="padding-left: 70px; font-size: larger;"><b>Courses</b></p>
+            <p style="padding-left: 40px; font-size: larger;"><b>Courses</b></p>
             <div class="courses">
-                        <ul style="font-size: 16px; padding-left: 85px;">
+                        <ul style="font-size: 16px; padding-left: 50px;">
                             <li>Java</li>
                             <li>C Programming</li>
                             <li>Object Oriented Design</li>
                             <li>Data Structures and Algorithm</li>
                         </ul>
 
-                        <ul style="font-size: 16px; padding-left: 100px;">
+                        <ul style="font-size: 16px; padding-left: 90px;">
                             <li>Information Security</li>
                             <li>Operation Systems</li>
                             <li>Computer Networks</li>
                             <li>Network Management</li>
                         </ul>
 
-                        <ul style="font-size: 16px; padding-left: 100px;">
+                        <ul style="font-size: 16px; padding-left: 90px;">
                             <li>Computer Architecture</li>
                             <li>Software Engineering</li>
                         </ul>
@@ -87,12 +128,12 @@
             
             <div class="line-split" style="height: 5px; margin-top: 30px; margin-bottom: 30px;"></div>
 
-            <h2 style="padding-left: 70px;">Additional Experience:</h2>
+            <h2 style="padding-left: 30px;">Additional Experience:</h2>
             <div class="line-split"></div>
-            <p style="padding-left: 70px;">Immigration Center at Sacred Heart Community Service, San Jose, CA, Fall 2017</p>
-            <p style="padding-left: 70px;">Volunteer:</p>
-            <p style="padding-left: 70px;">
-                <ul style="padding-left: 150px;">
+            <p style="padding-left: 30px;">Immigration Center at Sacred Heart Community Service, San Jose, CA, Fall 2017</p>
+            <p style="padding-left: 30px;">Volunteer:</p>
+            <p style="padding-left: 30px; ">
+                <ul style="padding-left: 130px;">
                     <li>Helped inform San Jose residents of the immigration services available to them. </li>
                     <li>Collaborated with other volunteers and workers to create and improve new events that will benefit the immigrant community.</li>
                 </ul>
@@ -104,6 +145,7 @@
                                             <li style="padding-left: 240;">CSS</li>
                                             <li style="padding-left: 240;">Python</li>
                                             </ul></p> -->
+            
         </div>
     </div>
 
@@ -138,7 +180,7 @@
             <div><a href="https://www.linkedin.com/in/xochitl-medina-arreola/"><img src="linkedin.png" alt="linkedin logo" class="icons"></a></div>
             <div><a href="https://twitter.com/xochitlmagm"><img src="twitter.png" alt="twitter logo" class="icons"></a></div>
         </div>
-        <form action="sendemail.php" method="post" >
+        <!-- <form action="sendemail.php" method="post" >
             <p>
                 <label for="name">Enter name: </label>
                 <input type="text" name="name">
@@ -155,7 +197,7 @@
                 <input type="text" name="body" style="width: 400px; height: 100px;">
             </p>
             <input type="button" value="submit">
-        </form>
+        </form> -->
     </div>
 
     <button class="backtotop"><a href="#name">Back to top</a></button>

@@ -13,7 +13,7 @@ body {
     /* white-space:nowrap; */
     /* overflow-y: scroll;
     overflow-x: hidden;  */
-    
+    width: 100%;
     
 }
 button{
@@ -37,6 +37,7 @@ button{
 
 
 #name{
+    
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: justify;  /* For Edge */
@@ -53,14 +54,14 @@ table, tr{
     /* margin: auto; */
     margin-right: -35;
     position: sticky;
-    width: 50%;
+    width: 20%;
     margin: 0 auto;
 }
 td{
     /* border: 1px solid black; */
     padding: 20px 90px 20px 90px;
-    width: 90px;
-    font-size: 20px;
+    width: 25%;
+    font-size: 15px;
     white-space: nowrap; /* this is so the words come right after the other and don't go under */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background: #949B96; */
@@ -91,27 +92,32 @@ a:hover{
     
     /* margin: 100px 100px 100px 100px ; */
     /* the next two will be to horizontally center the div */
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
     border-radius: 5%;
     background: white;
-    padding: 20px;
+    padding: 40px;
     
-    height: 500px;
-    width: 800px;
+    height: 40%;
+    max-height: 60%;
+    width: 70%;
+    max-width: 800px;
     position: relative;
 
 }
 #experience{
-    width: 80%;
+    width: 100%;
     height: 800px;
     /* background: white; */
     margin: auto;
 }
 .resume{
-    margin: 0px 150px 0px 150px;
+    margin: 10px 50px 10px 10px;
     background: white;
-    height: 90%;
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+    overflow: scroll;
 }
 #projects{
     width: 100%;
@@ -120,24 +126,30 @@ a:hover{
     /* the following will fix the problem when overflowing happens inside the div */
     /* super cool */
     /* overflow: auto;  */
+
+    margin-top: 30px;
+    /* padding-top: 30px; */
+
 }
 #proj{
     height: 800px;
     width: 800px;
     border: 1px solid black;
-    margin: 20px 40px 20px 40px;
+    /* margin: 20px 40px 20px 40px; */
 }
 /* this one is to structure inside the project box  */
 #projbox{
     display: flex;
     flex-wrap: wrap-reverse;
-    margin: 50px 50px 50px 50px;
-    padding: 5px 50px 50px 50px;
+    margin: 30px;
+    padding: 0px 0px 0px 0px;
     float: left;
+    height: 70%;
+    width: 65%;
 }
 #footer{
     width: 100%;
-    height: 350px;
+    height: 80%;
     background: #5F7470;
 }
 .contacts{
@@ -189,11 +201,74 @@ a:hover{
 }
 .projs{
     height: 100px;
-    width: 250px;
+    width: 95%;
     background-color: white;
-    margin: 30px 30px 30px 30px;
+    margin: 20px 5px 20px;
+    position: inherit;
 }
 .proj-selection{
     float: right;
-    margin: 100px 150px 100px 100px;
+    /* margin: 100px 150px 100px 100px; */
+    margin-right: 15px;
+    width: 20%;
 }
+#directory{
+    width: 50%;
+}
+ul#newdir li{
+    display: inline;
+}
+li a{
+    font-size: 25px;
+    padding: 0 20px 0;
+    margin: 0 auto;
+}
+ul{
+    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+}
+li{
+    /* margin: 0 auto; */
+}
+
+.dropbtn {
+    background-color: #3c4229;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #353832;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+ 
