@@ -81,41 +81,55 @@ a:hover{
 
 .first{
     background: blue;
-    height: 1000px;
+    height: 95%;
     width: 100%;
     /* margin: 80px 0px 80px 0px; */
     background: #F5F5DC;
     /* position: fixed; this is done in order to stay in the back */
+    
+    /* flex-wrap: nowrap; */
 }
 #aboutme{
-    top: 60px;
-    
-    /* margin: 100px 100px 100px 100px ; */
+    top: 50px;
+    /* margin: 60px 100px 100px 50px ; */
+    margin-left: 50px;
+    margin-bottom: 200px;
+    margin: auto;
+    /* margin: 0 auto; */
     /* the next two will be to horizontally center the div */
     /* width: 50%; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border-radius: 5%;
     background: white;
     padding: 40px;
     
-    height: 40%;
-    max-height: 60%;
+    height: 100%;
+    max-height: 2000px;
     width: 70%;
     max-width: 800px;
     position: relative;
 
 }
+.likes{
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    float: right;
+}
 #experience{
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
+    height: 100%;
     /* background: white; */
     margin: auto;
 }
 .resume{
-    margin: 10px 50px 10px 10px;
+    /* margin: 10px 50px 10px 10px; */
+    margin: auto;
     background: white;
     width: 95%;
-    height: 95%;
+    max-width: 900px;
+    height: 85%;
     padding: 20px;
     overflow: scroll;
 }
@@ -151,6 +165,7 @@ a:hover{
     width: 100%;
     height: 80%;
     background: #5F7470;
+    margin-bottom: 120px;
 }
 .contacts{
     display: flex;
@@ -158,6 +173,7 @@ a:hover{
     /* margin: auto; */
     /* margin-left: 20px; */
     float: left;
+    margin: 0 auto;
 }
 /* li{
     padding: 0px 20px 0px 20px;
@@ -205,12 +221,15 @@ a:hover{
     background-color: white;
     margin: 20px 5px 20px;
     position: inherit;
+    display: inline-block;
+
 }
 .proj-selection{
     float: right;
     /* margin: 100px 150px 100px 100px; */
     margin-right: 15px;
     width: 20%;
+    /* display: inline-block; */
 }
 #directory{
     width: 50%;
