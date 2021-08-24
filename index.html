@@ -70,6 +70,8 @@
         }
         }
     </script>
+
+    <h5 style="float: middle; margin-left: 35%; color: white; display: inline;">My personal and forever changing website.</h5>
 </div> 
 
 <hr>
@@ -81,9 +83,9 @@
                     
                     <div style="padding: 20px; margin: 20px; background-color: #a5a507; border-radius: 5%;">
                         <p style="text-indent: 30px; font-size: 20px; white-space: normal; overflow: scroll; text-overflow: ellipsis; width:350px;"><p>Hello!</p>My name is Xochitl, pronounced as 'sochi'. I graduated from San Jose State University this Summer 2021.
-                            Not only am I interested in tech, but as well as art (specifically drawing and painting). My interest in tech are Web Development and Security. I love to 
-                            learn to new things and I am always up for something new.
+                            Not only am I interested in tech, but as well as art (specifically drawing and painting). My interest in tech are Web Development and Security. I love to learn to new things and I am always up for something new.
                         </p>
+                        <p>I am currently looking for internships or entry level jobs as a Software Developer, Software Engineer, or anything similar to it!</p>
                     </div> 
                 
                 </div>
@@ -98,7 +100,7 @@
         <div class="resume">
             <div>
                 <h1 style="padding: 0px 0px 0px 10px; margin-top: 5px; float: left;">Resume</h1>
-                <button style="float: middle; margin: 10px 0px 0px 30px;"><a href="resume.pdf" target="_blank" style="color: black;">PDF Version</a></button>
+                <button style="float: middle; margin: 10px 0px 0px 30px;"><a href="xochitlmedinaarreola.pdf" target="_blank" style="color: black;">PDF Version</a></button>
             </div>
             <br>
             <h2 style="padding-left: 40px;">Education:</h2>
@@ -162,19 +164,29 @@
             <div id="projbox">
                 <!-- the id is for the basic structure of each box -->
                 <div id="proj">
-                    <h2 id="title">Title</h6>
-                    <div id="links">links</div>
-                    <div id="images">images of said project</div>
-                    <div id="description">Description</div>
+                    <h2 id="title">Personal Website</h6>
+                    <div id="links"><a href="https://github.com/xochitlmagm/xochitlmedinaarreola" id="linky" style="color: black;">Github</a></div>
+                    <div id="images">
+                        <h1 style="height: 50%;">No images needed as you're right on the website! Enjoy.</h1>
+                    </div>
+                    <div id="description" style="margin-top: 5px;">
+                        <p>Solo project</p>
+                        <p>Following langauges were used: HTML, CSS, Javascript</p>
+                        <p>Objective: To code my own portfolio in order to showcase my front end web development skills.</p>
+                        <p>** You can go to the Github link at the top or inspect the element right on this browser to take a look at the code.</p>
+                    </div>
                 </div>
             </div>
             <div class="proj-selection">
-                <button id="weeklyplanner" class="projs">
-
-                </button>
-                <button id="houses" class="projs">
-
-                </button>
+                <button id="selected" class="projs" name="personalweb" onclick="showWebsite()">
+                    <h2>Personal Website</h1>
+                    </button>
+                <button id="selected" class="projs" name="weeklyplanner" onclick="showWeekly()">
+                    <h2>Weekly Planner</h1>
+                    </button>
+                <button id="selected" class="projs" name="house" onclick="showHouse()">
+                    <h2>House Market</h1>
+                    </button>
             </div>
         </center>
         <script src="main.js"></script>

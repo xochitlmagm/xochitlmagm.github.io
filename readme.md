@@ -1,9 +1,11 @@
 # My Personal Website
 
-### Some things that I gotts fix:
-so when the window page is a normal size, the project squares are lined down, basically overflowing onto the next div.
-maybe change the color to make it more readable
+Hello! Welcome to my personal website that I have coded in order to show off my skills in web development. 
+<br>
+I have used the following languages:
+- HTML
+- CSS
+- Javascript
 
-### some things that I should add:
-make the resume section more interesting to look at?
-
+<br>
+This is specifically to show my most basic skills and will be using other personal websites to show off my other different and more advanced skills. Which is showed in my project section and can also be seen right on my github page.
